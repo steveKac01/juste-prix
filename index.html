@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+    <title> Le Juste prix </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+      html, body {
+      background-color: #232020;
+      min-width: 500px;
+  }
+
+  header {
+    color: #ff7315;
+    text-align: center;
+    font-size: 3em;
+  }
+  #instructions {
+      color: white;
+  }
+  .instruction {
+      padding: 15px;
+      margin: 10px 0;
+  }
+  .plus {
+     background-color: #f67280;
+  }
+
+  .moins {
+      background-color: #ffa372;
+  }
+
+  .fini {
+      background-color : #0c9463;
+  }
+  .plus,.moins,.fini{
+    margin-top: 10px;
+  }
+  @keyframes fadeIn {
+    0%{
+opacity: 0%;
+    }
+    100%{
+opacity: 100%;
+    } 
+  }
+
+  @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    </style>
+  </head>
+  <body>
+   
+
+<div class="container">
+  
+  <div class="row justify-content-center mt-5">
+    <header>
+      Le Juste Prix
+    </header>
+  </div>
+  
+  <!-- Formulaire -->
+  <div class="row justify-content-center mt-5 mb-4">   
+    <div class="col-lg-8">   
+      <div class="bg-light p-5 shadow">
+        
+      
+          <div class="row">
+            <div class="col">
+              <input id="prix" class="form-control" placeholder="Devinez le prix ! (entre 0 et 1 000)" />
+            </div>
+            <button>Deviner</button>
+          </div>
+          <small class="text-danger"></small>        
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Instructions -->
+  <div class="row justify-content-center" id="result">
+    <div id="instructions" class="col-lg-8"></div>
+  </div>
+  
+</div>
+</body>
+<script src="js/index.js"></script>
+  
+
+</html>
